@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#153f0b</color>
+    <color name="colorPrimaryDark">#153f0b</color>
+    <color name="colorAccent">#153f0b</color>
+    <color name="temp">#8dae89</color>
+    <color name="temp1">#61bac6</color>
+    <color name="sever">#458a3e</color>
+    <color name="you">#015863</color>
+    <color name="backchat">#d5ebd1</color>
+    <color name="cursor">#146d04</color>
+    <color name="delete">#cb2d2d</color>
+    <color name="change">#bb8718</color>
+    <color name="changename">#2b9a87</color>
+
+</resources>

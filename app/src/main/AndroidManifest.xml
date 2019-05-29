@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wanted.chatplus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="ChatPlus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Contact_chat"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity android:name=".Group_creation_dialog" />
+
+        <activity android:name=".Main_Page" android:launchMode="singleTask">
+
+        </activity>
+
+        <activity android:name=".Contact_Fragment" />
+        <activity android:name=".Chat_Fragment" />
+        <activity android:name=".Group_Fragment" />
+
+
+        <activity
+            android:name=".Group_chat_screen"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+            >
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+            >
+        </activity>
+        <activity android:name=".Group_info_screen" />
+        <activity android:name=".Remove_Member" />
+        <activity android:name=".Change_Group_Name" />
+
+    </application>
+
+</manifest>
