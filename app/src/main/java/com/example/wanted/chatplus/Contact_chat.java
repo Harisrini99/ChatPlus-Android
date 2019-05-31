@@ -242,8 +242,7 @@ public class Contact_chat extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch(item.getItemId()) {
-            case R.id.home: // back
-                Toast.makeText(Contact_chat.this, "Yged out!", Toast.LENGTH_SHORT).show();
+            case android.R.id.home:
                 onBackPressed();
                 return true;
             case R.id.menu_sign_out:

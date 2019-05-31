@@ -86,11 +86,12 @@
         <ListView
             android:id="@+id/androidList"
             android:layout_width="wrap_content"
-            android:layout_height="255dp"
-            android:layout_alignParentStart="true"
+            android:layout_height="match_parent"
             android:layout_below="@+id/id"
+            android:layout_alignParentStart="true"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="100dp">
 
         </ListView>
 
@@ -101,6 +102,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="-80dp"
             android:orientation="horizontal">
 
             <Space

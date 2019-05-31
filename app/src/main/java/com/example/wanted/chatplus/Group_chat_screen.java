@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -188,8 +189,7 @@ public class Group_chat_screen extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
-            case R.id.home: // back
-                Toast.makeText(Group_chat_screen.this, "Yged out!", Toast.LENGTH_SHORT).show();
+            case android.R.id.home:// back
                 onBackPressed();
                 return true;
             case R.id.logout:
@@ -211,7 +211,7 @@ public class Group_chat_screen extends AppCompatActivity {
                 cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
                 cdd.create();
                     cdd.show();
-                cdd.getWindow().setLayout(620, 800);
+                cdd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
                 return true;
             case R.id.addmember:
                 Add_Member cdd1 = new Add_Member(Group_chat_screen.this);
@@ -220,7 +220,7 @@ public class Group_chat_screen extends AppCompatActivity {
                 cdd1.create();
                 if(cdd1.p2.length != 0)
                     cdd1.show();
-                cdd1.getWindow().setLayout(675, 800);
+                cdd1.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
                 return true;
             case R.id.removemember:
                 Remove_Member cdd2 = new Remove_Member(Group_chat_screen.this);
@@ -228,7 +228,7 @@ public class Group_chat_screen extends AppCompatActivity {
                 cdd2.create();
                 if(cdd2.p1.length != 0)
                     cdd2.show();
-                cdd2.getWindow().setLayout(675, 800);
+                cdd2.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
                 return true;
             case R.id.exitgroup:
                 progressDialog = ProgressDialog.show(this, "Exiting Group....", "Please wait...", false, false);
@@ -239,7 +239,7 @@ public class Group_chat_screen extends AppCompatActivity {
                 cdd3.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
                 cdd3.create();
                 cdd3.show();
-                cdd3.getWindow().setLayout(675, 700);
+                cdd3.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
 
                 return true;
 

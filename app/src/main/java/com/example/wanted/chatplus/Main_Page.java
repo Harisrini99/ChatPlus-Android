@@ -22,6 +22,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -154,7 +155,7 @@ public class Main_Page extends AppCompatActivity
 
                     cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
                     cdd.show();
-                    cdd.getWindow().setLayout(675, 1000);
+                    cdd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
                 }
                 return true;
             case R.id.logout:
